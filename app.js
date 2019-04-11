@@ -38,4 +38,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//10/04/2019
+var port = 8000;
+app.listen(port, () => {
+  console.log("Corriendo en el puerto "+ port)
+});
+
 module.exports = app;
